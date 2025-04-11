@@ -5,12 +5,17 @@
     box-sizing: border-box;
 }
 body{  
-    background: linear-gradient(
-        to bottom,
-        rgb(246, 246, 124),
-        rgb(54, 54, 54)
-    );
+    background: #fbff00; 
+    background: linear-gradient(55deg, rgba(251, 255, 0, 1) 0%, rgba(181, 163, 5, 1) 30%, rgba(0, 0, 0, 1) 100%);
+    animation: gradientShift 10s ease infinite;
+    background-size: 400%;
 
+    @keyframes gradientShift{
+        0% {background-position 0% 50%;}
+        50%{background-position 50% 100%;}
+        100%{background-position 0% 50%;}
+    }
+    
 }
 .container-main{
     background-color: #363636;
@@ -47,16 +52,17 @@ body{
     color: white;
 }
 .container-social-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding-bottom: 50%;
+    margin-top: 50px;
+    list-style-type: none;
 }
 .container-social-links li {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 30px;
     align-items: center;
+    margin-bottom: 5px;
+    margin-top: 50px;
     border: 1px solid rgb(246, 246, 124);
     border-radius: 8px;
     padding: 10px;
