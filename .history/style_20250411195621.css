@@ -1,0 +1,80 @@
+
+@import url("./effects.css");
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{  
+    background: linear-gradient(55deg, rgb(74, 74, 9) 0%, rgb(24, 23, 1) 23%,rgb(0, 0, 0) 100%);
+    animation: gradientShift 6s ease infinite;
+    background-size: 600%;
+
+}
+.container-main{
+    background-color: #363636;
+    width: 400px;
+    height: 720px;
+    box-sizing: border-box;
+    margin: 120px auto;
+    padding: 70px;
+    border-radius: 15px;
+    text-align: center;
+}
+.container-image{
+
+    & img{
+       width: 140px;
+       border-radius: 100%;
+    }
+}
+.container-infos{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.container-infos h1{
+    font-weight: 700;
+    color: white;
+}
+.container-infos h2{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(246, 246, 124);
+}
+.container-paragrafo{
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 50px;
+}
+.container-social-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.container-social-links li {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid rgb(246, 246, 124);
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s;
+
+
+    &:hover{
+        background-color: rgb(246, 246, 124);
+    }
+  }
+ 
+.container-social-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+
+    &:hover{
+        color: black;
+    }
+}
