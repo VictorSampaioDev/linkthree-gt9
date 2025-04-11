@@ -8,9 +8,9 @@
     box-sizing: border-box;
 }
 body{  
-    background: linear-gradient(55deg, rgb(74, 74, 9) 0%, rgb(24, 23, 1) 23%,rgb(0, 0, 0) 100%);
+    background: linear-gradient(55deg, rgb(224, 224, 37) 0%, rgb(246, 246, 124, 1) 50%,rgb(164, 162, 36) 100%);
     animation: gradientShift 6s ease infinite;
-    background-size: 600%;
+    background-size: 400%;
 
 }
 .container-main{
